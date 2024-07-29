@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations - TravelWithUs</title>
+    <link rel="stylesheet" href="destinationsstyles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">Travel Explorer</a>
+            <ul class="navbar-menu">
+                <li class="navbar-item"><a href="index.html" class="navbar-link">Home</a></li>
+                <li class="navbar-item"><a href="about.html" class="navbar-link">About Us</a></li>
+                <li class="navbar-item active"><a href="destinations.html" class="navbar-link">Destinations</a></li>
+                <li class="navbar-item"><a href="contact.html" class="navbar-link">Contact Us</a></li>
+                <li class="navbar-item"><a href="signup.html" class="navbar-button">Signup</a></li>
+                <li class="navbar-item"><a href="login.html" class="navbar-button">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header class="header">
+        <h1>Explore Our Top Destinations</h1>
+        <p>Discover the most beautiful places around the world</p>
+    </header>
+
+   
+          <!--------------------------------------->
+
+
+<div class="container-fluid">
+<div class="container">
+<div class="search">
+<h1>Explore Now</h1>
+<input type="text" name="" id="find" placeholder="search here...." onkeyup="search()">
+</div>
+<div class="product-list">
+<div class="product">
+<img src="p1.jpg" height="280px" width="280px">
+<h3>Egypt </h3>
+<h4>Egyptian Pyramids</h4>
+</div>
+<div class="product">
+<img src="p2.jpg" height="280px" width="280px">
+<h3>China</h3>
+<h4>Great Wall Of China</h4>
+</div>
+<div class="product">
+<img src="p3.jpg" height="280px" width="280px">
+<h3>Mayan</h3>
+<h4> Chichen</h4>
+</div>
+<div class="product">
+<img src="p4.jpg" height="280px" width="280px">
+<h3>Petra, Jordan  </h3>
+<h4>The Khaznah</h4>
+</div>
+<div class="product">
+<img src="p5.jpg" height="280px" width="280px">
+<h3>Cuzco,Peru</h3>
+<h4>Machu Picchu </h4>
+</div>
+<div class="product">
+<img src="p6.jpg" height="280px" width="280px">
+<h3> India</h3>
+<h4>Taj Mahal</h4>
+</div>
+<div class="product">
+<img src="p7.jpg" height="280px" width="280px">
+<h3>France</h3>
+<h4> Paris</h4>
+</div>
+<div class="product">
+<img src="p8.jpg" height="280px" width="280px">
+<h3>England</h3>
+<h4> London</h4>
+</div>
+</div>
+</div>
+</div>
+<!-- javascript -->
+<script type="text/javascript">
+function search() {
+let filter = document.getElementById('find').value.toUpperCase();
+let item = document.querySelectorAll('.product');
+let l = document.getElementsByTagName('h3');
+for(var i = 0;i<=l.length;i++){
+let a=item[i].getElementsByTagName('h3')[0];
+let value=a.innerHTML || a.innerText || a.textContent;
+if(value.toUpperCase().indexOf(filter) > -1) {
+item[i].style.display="";
+}
+else
+{
+item[i].style.display="none";
+}
+}
+}
+</script>
+<!------------------------------------------------>
+
+<section class="search-section">
+  <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search destinations...">
+      <button onclick="addFavorite()">Add Favorite</button>
+  </div>
+</section>
+
+
+<main class="destinations-container" id="destinationsContainer">
+  <!-- Destination cards will be dynamically added here -->
+</main>
+
+<section class="favorite-destinations">
+  <h2>Favorite Destinations</h2>
+  <ul id="favoritesContainer"></ul>
+</section>
+
+<section class="gallery" id="gallery">
+  <div class="container">
+
+          <p class="section-subtitle">Photo Gallery</p>
+
+          <h2 class="section-title">Favourite destinations of Travellers</h2>
+
+          <ul class="gallery-list">
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="https://images.pexels.com/photos/3278215/pexels-photo-3278215.jpeg?cs=srgb&dl=pexels-freestockpro-3278215.jpg&fm=jpg" alt="Gallery image">
+              </figure>
+            </li>
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="https://cdn.pixabay.com/photo/2016/10/18/08/13/travel-1749508_640.jpg" alt="Gallery image">
+              </figure>
+            </li>
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="https://t3.ftcdn.net/jpg/02/45/68/40/360_F_245684006_e55tOria5okQtKmiLLbY30NgEHTIB0Og.jpg" alt="Gallery image">
+              </figure>
+            </li>
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="https://media.cntraveler.com/photos/5e74f9de2e6ca30009d1d4fa/16:9/w_2560%2Cc_limit/Argentina-GettyImages-1146497849.jpg" alt="Gallery image">
+              </figure>
+            </li>
+          </ul>
+
+        </div>
+      </section>
+
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="social-media">
+                <a href="https://en.wikipedia.org/wiki/Twitter"><img src="https://images.hindustantimes.com/tech/img/2023/09/21/1600x900/fb_1695273515215_1695273522698.jpg" alt="Facebook"></a>
+                <a href="https://www.instagram.com/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/1245px-Logo_of_Twitter.svg.png" alt="Twitter"></a>
+                <a href="https://www.facebook.com/login/"><img src="https://static01.nyt.com/images/2016/05/11/us/12xp-instagram/12xp-instagram-videoSixteenByNineJumbo1600-v2.jpg" alt="Instagram"></a>
+            </div>
+            <p>&copy; 2024 Travel Explorer. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="destinationscript.js"></script>
+</body>
+</html>

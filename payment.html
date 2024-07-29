@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Payment</title>
+    <link rel="stylesheet" href="paymentstyles.css">
+</head>
+<body>
+    <header>
+        <h1>Travel Booking</h1>
+      </header>
+    <div class="container">
+        <h2>Payment for Your Travel Booking</h2>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/000/702/403/small/airplane-flying-and-leaving-heart-shape-dashed-line.jpg" width="100%" alt="img">
+        <form id="payment-form">
+            <div class="form-group">
+                <label for="card-name">Name on Card</label>
+                <input type="text" id="card-name" name="card-name" required>
+            </div>
+            <div class="form-group">
+                <label for="card-number">Card Number</label>
+                <input type="text" id="card-number" name="card-number" required>
+            </div>
+            <div class="form-group">
+                <label for="expiry-date">Expiry Date</label>
+                <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required>
+            </div>
+            <div class="form-group">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" required>
+            </div>
+            <button type="submit">Submit Payment</button>
+        </form>
+        <div id="message"></div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Travel Booking</p>
+        <p><a href="index.html">Back to Home Page</a></p> <!-- Link to index.html -->
+      </footer>
+    <script src="paymentscript.js"></script>
+</body>
+</html>

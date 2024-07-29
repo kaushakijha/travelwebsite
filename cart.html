@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add to Cart - TravelWithUs</title>
+    <link rel="stylesheet" href="addtocartstyles.css">
+    <link rel="stylesheet" href="cartstyles.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">TravelWithUs</a>
+            <ul class="navbar-menu">
+                <li class="navbar-item"><a href="index.html" class="navbar-link">Home</a></li>
+                <li class="navbar-item"><a href="about.html" class="navbar-link">About Us</a></li>
+                <li class="navbar-item active"><a href="destinations.html" class="navbar-link">Destinations</a></li>
+                <li class="navbar-item"><a href="contact.html" class="navbar-link">Contact Us</a></li>
+                <li class="navbar-item"><a href="signup.html" class="navbar-button">Signup</a></li>
+                <li class="navbar-item"><a href="login.html" class="navbar-button">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="product-container">
+        <div class="product" data-id="1">
+            <img src="https://t4.ftcdn.net/jpg/02/96/15/35/360_F_296153501_B34baBHDkFXbl5RmzxpiOumF4LHGCvAE.jpg" alt="Destination 1">
+            <h3>Paris</h3>
+            <p>Paris has been one of the world's major centres of finance, diplomacy,finance, diplomacy,finance, diplomacy.</p>
+            <p>$500</p>
+            <button class="add-to-cart-btn">Add</button>
+        </div>
+        <div class="product" data-id="2">
+            <img src="https://thesavvybackpacker.com/wp-content/uploads/2021/12/most-visited-cities-europe.jpg" alt="Destination 2">
+            <h3>Europe</h3>
+            <p>The smallest country in Europe is Vatican City, which is only about 0.44 square kilometers (0.17 square miles) in area.</p>
+            <p>$700</p>
+            <button class="add-to-cart-btn">Add</button>
+        </div>
+        <div class="product" data-id="3">
+            <img src="https://img.etimg.com/thumb/width-640,height-480,imgsize-104894,resizemode-75,msid-105355936/news/international/uae/dubai-and-the-uae-a-global-wealth-nexus.jpg" alt="Destination 3">
+            <h3>Dubai</h3>
+            <p>Dubai, United Arab Emirates,Image of the Week,Earth Watching. Dubai is the most popular city in the United Arab.</p>
+            <p>$600</p>
+            <button class="add-to-cart-btn">Add</button>
+        </div>
+        <div class="product" data-id="4">
+            <img src="https://cdn.britannica.com/80/155980-050-3A532B36/Restaurant-village-Alpine-Grindelwald-Switzerland.jpg" alt="Destination 4">
+            <h3>Switzerland</h3>
+            <p>Switzerland is famous for its mountains, clocks and its foodclocks and its food – especially cheese and chocolates.</p>
+            <p>$800</p>
+            <button class="add-to-cart-btn">Add</button>
+        </div>
+    </div>
+
+    <div class="cart-container">
+        <h2>Total Amount</h2>
+        <ul id="cartItems">
+            <!-- Cart items will be dynamically added here -->
+        </ul>
+        <p id="totalAmount">Total: $0</p>
+        <button id="checkoutBtn"><a href="payment.html" id="checkoutBtn">Proceed Too Payment</a></button>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Travel Booking</p>
+        <p><a href="index.html">Back to Home Page</a></p>
+      </footer>
+
+    <script src="cartscript.js"></script>
+</body>
+</html>

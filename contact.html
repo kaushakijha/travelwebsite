@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Travel Explorer</title>
+  <link rel="stylesheet" href="contactstyles.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-container">
+        <a href="index.html" class="navbar-logo">Travel Explorer</a>
+        <ul class="navbar-menu">
+            <li class="navbar-item"><a href="index.html" class="navbar-link">Home</a></li>
+            <li class="navbar-item"><a href="about.html" class="navbar-link">About Us</a></li>
+            <li class="navbar-item active"><a href="destinations.html" class="navbar-link">Destinations</a></li>
+            <li class="navbar-item"><a href="contact.html" class="navbar-link">Contact Us</a></li>
+            <li class="navbar-item"><a href="signup.html" class="navbar-button">Signup</a></li>
+            <li class="navbar-item"><a href="login.html" class="navbar-button">Login</a></li>
+        </ul>
+    </div>
+</nav>
+
+  <section class="contact-form">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+      <div id="result"></div>
+      <div id="successMessage" class="hidden">Thank you for contacting us! We will get back to you shortly.</div>
+    </div>
+  </section>
+
+<footer>
+    <div class="container">
+        <div class="footer-links">
+            <ul>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
+        <div class="social-media">
+            <a href="https://en.wikipedia.org/wiki/Twitter"><img src="https://images.hindustantimes.com/tech/img/2023/09/21/1600x900/fb_1695273515215_1695273522698.jpg" alt="Facebook"></a>
+            <a href="https://www.instagram.com/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/1245px-Logo_of_Twitter.svg.png" alt="Twitter"></a>
+            <a href="https://www.facebook.com/login/"><img src="https://static01.nyt.com/images/2016/05/11/us/12xp-instagram/12xp-instagram-videoSixteenByNineJumbo1600-v2.jpg" alt="Instagram"></a>
+        </div>
+        <p>&copy; 2024 Travel Explorer. All rights reserved.</p>
+    </div>
+</footer>
+
+  <script src="contactForm.js"></script>
+</body>
+</html>

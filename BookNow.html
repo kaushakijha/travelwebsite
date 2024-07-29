@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Booking</title>
+  <link rel="stylesheet" href="BookNowstyles.css">
+</head>
+<body>
+  <header>
+    <h1>Travel Booking</h1>
+  </header>
+  <main>
+    <section class="booking-section">
+      <h2>Book Your Trip</h2>
+      <form id="bookingForm">
+        <div class="form-group">
+          <label for="destination">Destination:</label>
+          <input type="text" id="destination" name="destination" required>
+        </div>
+        <div class="form-group">
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="date" required>
+        </div>
+        <button type="submit">Book Now</button>
+      </form>
+      <div id="bookingSummary" style="display:none;">
+        <h3>Booking Summary</h3>
+        <p><strong>Destination:</strong> <span id="summaryDestination"></span></p>
+        <p><strong>Date:</strong> <span id="summaryDate"></span></p>
+        <button id="modifyBooking">Modify Booking</button>
+        <button id="confirmBooking">Confirm Booking</button>
+      </div>
+      <div id="bookingResult"></div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Travel Booking</p>
+    <p><a href="index.html">Back to Home Page</a></p> 
+  </footer>
+  <script src="BookNowScript.js"></script>
+</body>
+</html>

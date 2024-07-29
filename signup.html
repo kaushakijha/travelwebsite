@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - TravelWithUs</title>
+    <link rel="stylesheet" href="signupstyles.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">Travel Explorer</a>
+            <ul class="navbar-menu">
+                <li class="navbar-item"><a href="index.html" class="navbar-link">Home</a></li>
+                <li class="navbar-item"><a href="about.html" class="navbar-link">About Us</a></li>
+                <li class="navbar-item active"><a href="destinations.html" class="navbar-link">Destinations</a></li>
+                <li class="navbar-item"><a href="contact.html" class="navbar-link">Contact Us</a></li>
+                <li class="navbar-item"><a href="signup.html" class="navbar-button">Signup</a></li>
+                <li class="navbar-item"><a href="login.html" class="navbar-button">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="signup-container">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/000/702/403/small/airplane-flying-and-leaving-heart-shape-dashed-line.jpg" width="100%" alt="img">
+        <h2>Sign Up</h2>
+        <form id="signupForm" action="#" method="post">
+            <div class="form-group">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter a password" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Sign Up</button>
+            </div>
+        </form>
+        <p>Already have an account? <a href="login.html">Log in here</a>.</p>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="social-media">
+                <a href="https://en.wikipedia.org/wiki/Twitter"><img src="https://images.hindustantimes.com/tech/img/2023/09/21/1600x900/fb_1695273515215_1695273522698.jpg" alt="Facebook"></a>
+                <a href="https://www.instagram.com/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/1245px-Logo_of_Twitter.svg.png" alt="Twitter"></a>
+                <a href="https://www.facebook.com/login/"><img src="https://static01.nyt.com/images/2016/05/11/us/12xp-instagram/12xp-instagram-videoSixteenByNineJumbo1600-v2.jpg" alt="Instagram"></a>
+            </div>
+            <p>&copy; 2024 Travel Explorer. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="signupscript.js"></script>
+
+</body>
+</html>
